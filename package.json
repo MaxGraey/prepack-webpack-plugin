@@ -1,5 +1,8 @@
 {
+  "name": "prepack-webpack-plugin",
   "version": "1.0.2",
+  "license": "BSD-3-Clause",
+  "main": "./dist/PrepackPlugin.js",
   "author": {
     "email": "gajus@gajus.com",
     "name": "Gajus Kuizinas",
@@ -47,9 +50,6 @@
     "prepack",
     "plugin"
   ],
-  "license": "BSD-3-Clause",
-  "main": "./dist/PrepackPlugin.js",
-  "name": "prepack-webpack-plugin",
   "nyc": {
     "include": [
       "src/**/*.js"
