@@ -1,16 +1,11 @@
 // @flow
 
 import ModuleFilenameHelpers from 'webpack/lib/ModuleFilenameHelpers';
-import {
-  RawSource
-} from 'webpack-sources';
-import {
-  prepack
-} from 'prepack';
-import type {
-  PluginConfigurationType,
-  UserPluginConfigurationType
-} from './types';
+
+import { RawSource } from 'webpack-sources';
+
+import { prepack } from 'prepack';
+import type { PluginConfigurationType, UserPluginConfigurationType } from './types';
 
 const defaultConfiguration = {
   prepack: {},
@@ -26,14 +21,14 @@ const isEntryChunk = (chunk: Object) => {
 export default class PrepackPlugin {
   configuration: PluginConfigurationType;
 
-  constructor (userConfiguration?: UserPluginConfigurationType) {
+  constructor(userConfiguration?: UserPluginConfigurationType) {
     this.configuration = {
       ...defaultConfiguration,
       ...userConfiguration
     };
   }
 
-  apply (compiler: Object) {
+  apply(compiler: Object) {
     const configuration = this.configuration;
 
     compiler.plugin('compilation', (compilation) => {

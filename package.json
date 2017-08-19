@@ -11,20 +11,19 @@
     "require": "babel-loader"
   },
   "dependencies": {
-    "prepack": "^0.2.0",
-    "webpack-sources": "^0.2.3"
+    "webpack-sources": "^1.0.1"
   },
   "description": "A webpack plugin for prepack.",
   "devDependencies": {
     "ava": "^0.19.1",
-    "babel-cli": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-plugin-istanbul": "^4.1.1",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-istanbul": "^4.1.4",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-env": "^1.4.0",
-    "babel-register": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
     "coveralls": "^2.13.0",
     "eslint": "^3.19.0",
     "eslint-config-canonical": "^8.1.1",
@@ -33,13 +32,14 @@
     "husky": "^0.13.3",
     "nyc": "^10.2.0",
     "semantic-release": "^6.3.6",
-    "webpack": "^2.4.1"
+    "webpack": "^3.5.5"
   },
   "peerDependencies": {
-    "webpack": "^2"
+    "prepack": "0.2.6-alpha.0",
+    "webpack": "^3"
   },
   "engines": {
-    "node": ">6.0.0"
+    "node": ">=8.0.0"
   },
   "keywords": [
     "webpack",
