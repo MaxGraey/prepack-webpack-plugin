@@ -1,4 +1,5 @@
 {
+  "version": "1.0.2",
   "author": {
     "email": "gajus@gajus.com",
     "name": "Gajus Kuizinas",
@@ -70,6 +71,5 @@
     "build": "rm -fr ./dist && NODE_ENV=production babel ./src --out-dir ./dist --copy-files --source-maps && flow-copy-source src dist",
     "lint": "eslint ./src ./test && flow",
     "test": "NODE_ENV=test nyc --reporter=text ava --verbose --serial"
-  },
-  "version": "1.0.1"
+  }
 }
